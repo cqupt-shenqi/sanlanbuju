@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>flex布局</title>
+	<style >
+        .content{
+        	display: flex;
+            margin:20px;
+        	border:1px;
+        	border-color: #999;
+        	border-style: solid; 
+        	background-color: #eee;
+        }
+        .left{
+        	order:-1;
+        	flex:0 1 200px;
+        	padding: 20px;
+        	border:1px;
+        	border-color: #999;
+        	border-style: solid; 
+        	background-color: white;
+        	margin:20px;
+        	height:80px;
+        	display: flex;
+            flex-direction: row;
+        }
+        .main{
+        	flex: 1 1 auto;
+        	padding:20px;
+        	border:1px;
+        	border-color: #999;
+        	border-style: solid; 
+        	background-color: white;
+        	margin:20px;
+
+        }
+        .right{
+        	flex: 0 1 80px;
+        	padding: 20px;
+        	border:1px;
+        	border-color: #999;
+        	border-style: solid; 
+        	background-color: white;
+        	margin:20px;
+
+        }
+        img{
+        	width: 80px;
+        	height:80px;
+        	background-color:#eee;
+        	border:1px;
+        	border-color: #999;
+        	border-style: solid; 
+        	margin-bottom: 20px;
+        }
+
+
+	</style>
+</head>
+<body>
+    <div class="content">
+        <div class="left">
+             <div>
+                     <img src="#" alt="团队logo 80*80">
+             </div>
+             <div style="margin-left: 20px">
+                     <p>团队名称</p>
+             </div>
+             
+        </div>
+        <div class="main">
+            <p>团队介绍</p>
+        </div>
+        <div class="right">
+            <img src="#" alt="团队logo 80*80">
+            <img src="#" alt="团队logo 80*80">
+            <img src="#" alt="团队logo 80*80">
+            <img src="#" alt="团队logo 80*80">
+        </div>
+    </div>
+</body>
+</html>
